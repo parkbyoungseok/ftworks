@@ -69,6 +69,12 @@
 - URL : http://3.35.213.205/api/ft/orderstatus.php
 - Request Param : GET, POST 모두 가능
   - order_id : 변경하려는 주문 ID
-  - status : 변경하려는 주문 ㄴ
-  - order_id : 변경하려는 주문 상태
-  - order_id : 변경하려는 주문 ID
+  - status : 변경하려는 주문 상태
+  - username : 변경하려는 담당자
+- Response Json :
+  - code : Integer 
+    - 200 : 정상
+    - 500 : 에러
+    - 기타 필요할 경우 추가 예정
+  - msg : String
+    - 응답 코드에 대한 Message
