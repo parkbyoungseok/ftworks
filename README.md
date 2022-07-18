@@ -39,6 +39,8 @@
 - URL : http://3.35.213.205/api/ft/orderlist.php
 - Request Param : GET, POST 모두 가능
   - order_id : 원하는 주문 ID가 있을 경우, order_id 를 넘겨주면 해당하는 주문건에 대한 정보만 리턴해 줌. orderid 가 없으면 전체 주문 정보가 리턴 됨.
+  - cartid : 지정된 Cart ID 가 있을 경우, cartid 를 넘겨주면 해당 Cart 가 할당된 주문건에 대한 정보만 리턴해 줌.
+  order_id 와 cartid 가 둘 다 있을 경우, cartid 가 우선 함.
 - Response Json :
   - id : String
     - order_id 로 사용하면 됨.
