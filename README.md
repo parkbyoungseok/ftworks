@@ -42,6 +42,13 @@
   - cartid : 지정된 Cart ID 가 있을 경우, cartid 를 넘겨주면 해당 Cart 가 할당된 주문건에 대한 정보만 리턴해 줌.
   order_id 와 cartid 가 둘 다 있을 경우, cartid 가 우선 함.
 - Response Json :
+  - code : Integer 
+    - 200 : 정상
+    - 400 : Session ID 가 없는 경우. Login에서 얻은 sessionid 를 X-Ft-Sessionid 이름으로 Header에 넣어주어야 합니다.
+    - 500 : 에러
+    - 기타 필요할 경우 추가 예정
+  - msg : String
+    - 응답 코드에 대한 Message
   - id : String
     - order_id 로 사용하면 됨.
   - status : String
@@ -76,6 +83,7 @@
 - Response Json :
   - code : Integer 
     - 200 : 정상
+    - 400 : Session ID 가 없는 경우. Login에서 얻은 sessionid 를 X-Ft-Sessionid 이름으로 Header에 넣어주어야 합니다.
     - 500 : 에러
     - 기타 필요할 경우 추가 예정
   - msg : String
