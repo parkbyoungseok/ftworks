@@ -49,29 +49,30 @@
     - 기타 필요할 경우 추가 예정
   - msg : String
     - 응답 코드에 대한 Message
-  - id : String
-    - order_id 로 사용하면 됨.
-  - status : String
-    - 주문 건에 대한 현재 상태
-    - "0" : 주문 완료 상태
-    - "100" : 작업자 할당 완료 상태
-    - "200" : 패킹 작업 진행 상태
-    - "300" : 패킹 완료 상태
-  - company_name : String
-    - 주문자(식당) 이름
-  - company_address : String
-    - 주문자 주소
-  - company_address_extra : String
-    - 주문자 상세 주소
-  - company_contact : String
-    - 주문자 전화 번호
-  - basket_items : Array
-    - product_id : String
-      - 상품 고유 번호
-    - name : String
-      - 상품 이름
-    - amount : String
-      - 상품 수량
+  - orderitems : Array
+    - id : String
+      - order_id 로 사용하면 됨.
+    - status : String
+      - 주문 건에 대한 현재 상태
+      - "0" : 주문 완료 상태
+      - "100" : 작업자 할당 완료 상태
+      - "200" : 패킹 작업 진행 상태
+      - "300" : 패킹 완료 상태
+    - company_name : String
+      - 주문자(식당) 이름
+    - company_address : String
+      - 주문자 주소
+    - company_address_extra : String
+      - 주문자 상세 주소
+    - company_contact : String
+      - 주문자 전화 번호
+    - basket_items : Array
+      - product_id : String
+        - 상품 고유 번호
+      - name : String
+        - 상품 이름
+      - amount : String
+        - 상품 수량
 
 ## Order Status 변경
 - 주문 건에 대한 상태를 변경하는 API
